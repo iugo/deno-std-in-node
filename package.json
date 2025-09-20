@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "init": "tsc --init",
+    "test": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/iugo/deno-std-in-node#readme",
   "devDependencies": {
+    "@types/node": "^24.5.2",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@std/async": "npm:@jsr/std__async@^1.0.14"
   }
 }
